@@ -391,3 +391,4 @@ About Checksums (EIP-55):
 
 if __name__ == '__main__':
     main()
+
