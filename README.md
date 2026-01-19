@@ -17,10 +17,6 @@
 - **100% Offline** — No network calls, fully air-gappable
 - **Auditable Code** — Single-file Python, easy to review
 
-### 🏷️ Keywords
-
-`ethereum` `wallet` `python` `cli` `bip39` `bip32` `hd-wallet` `mnemonic` `vanity-address` `eth-account` `private-key` `address-generator` `message-signing` `eip-191` `secp256k1` `keccak256` `web3` `cryptocurrency` `blockchain` `cold-storage` `offline-wallet` `air-gapped` `open-source` `educational`
-
 ---
 
 ## DISCLAIMER - EDUCATIONAL PURPOSES ONLY - NO LIABILITY
@@ -453,6 +449,10 @@ Standalone educational tools (Ethereum Foundation libraries only):
 - [EIP-1559 Transactions](https://eips.ethereum.org/EIPS/eip-1559)
 - [Web3 Secret Storage](https://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition)
 
+---
+### 🏷️ Keywords
+
+`ethereum` `wallet` `python` `cli` `bip39` `bip32` `hd-wallet` `mnemonic` `vanity-address` `eth-account` `private-key` `address-generator` `message-signing` `eip-191` `secp256k1` `keccak256` `web3` `cryptocurrency` `blockchain` `cold-storage` `offline-wallet` `air-gapped` `open-source` `educational`
 ---
 
 <p align="center">
