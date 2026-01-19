@@ -58,3 +58,4 @@ All features match the CLI tool:
 - No external network requests
 - Can be saved and used on an air-gapped machine
 - Uses official, audited Ethereum libraries
+
