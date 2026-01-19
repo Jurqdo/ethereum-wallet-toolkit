@@ -74,3 +74,4 @@ This codebase is well-documented and suitable for:
 - Repository: https://github.com/nirholas/ethereum-wallet-toolkit
 - Author: @nichxbt (Twitter/X)
 - License: MIT
+
