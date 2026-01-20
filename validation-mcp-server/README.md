@@ -1,5 +1,10 @@
 # Validation MCP Server
 
+[![PyPI](https://img.shields.io/pypi/v/validation-mcp-server)](https://pypi.org/project/validation-mcp-server/)
+[![MCP Registry](https://img.shields.io/badge/MCP-Registry-blue)](https://registry.modelcontextprotocol.io)
+
+<!-- mcp-name: io.github.nirholas/validation-mcp-server -->
+
 A Model Context Protocol (MCP) server providing comprehensive Ethereum address validation, private key validation, checksum conversion, and cryptographic utilities.
 
 ## Features

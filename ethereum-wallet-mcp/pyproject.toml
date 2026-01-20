@@ -4,13 +4,13 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ethereum-wallet-mcp"
-version = "0.1.0"
+version = "1.0.0"
 description = "MCP server for Ethereum wallet generation and HD wallet operations"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.11"
 authors = [
-    { name = "Ethereum Wallet MCP", email = "dev@example.com" }
+    { name = "nirholas", email = "nich@ethereum.tools" }
 ]
 keywords = ["ethereum", "wallet", "mcp", "hd-wallet", "bip39", "cryptocurrency"]
 classifiers = [

@@ -1,5 +1,10 @@
 # Keystore MCP Server
 
+[![PyPI](https://img.shields.io/pypi/v/keystore-mcp-server)](https://pypi.org/project/keystore-mcp-server/)
+[![MCP Registry](https://img.shields.io/badge/MCP-Registry-blue)](https://registry.modelcontextprotocol.io)
+
+<!-- mcp-name: io.github.nirholas/keystore-mcp-server -->
+
 A Model Context Protocol (MCP) server for Ethereum keystore encryption, decryption, and management following the Web3 Secret Storage Definition Version 3 standard.
 
 ## Features

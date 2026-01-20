@@ -1,5 +1,10 @@
 # Ethereum Wallet MCP Server
 
+[![PyPI](https://img.shields.io/pypi/v/ethereum-wallet-mcp)](https://pypi.org/project/ethereum-wallet-mcp/)
+[![MCP Registry](https://img.shields.io/badge/MCP-Registry-blue)](https://registry.modelcontextprotocol.io)
+
+<!-- mcp-name: io.github.nirholas/ethereum-wallet-mcp -->
+
 A Model Context Protocol (MCP) server providing Ethereum wallet generation and HD wallet functionality. This server enables AI assistants like Claude to securely generate Ethereum wallets, work with BIP39 mnemonics, and derive multiple accounts from a single seed phrase.
 
 ## Features

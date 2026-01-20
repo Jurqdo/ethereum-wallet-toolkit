@@ -4,13 +4,13 @@ build-backend = "hatchling.build"
 
 [project]
 name = "keystore-mcp-server"
-version = "0.1.0"
+version = "1.0.0"
 description = "MCP server for Ethereum keystore encryption, decryption, and management"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.11"
 authors = [
-    { name = "Keystore MCP Server", email = "dev@example.com" }
+    { name = "nirholas", email = "nich@ethereum.tools" }
 ]
 keywords = ["ethereum", "keystore", "mcp", "encryption", "web3", "cryptocurrency"]
 classifiers = [
@@ -44,6 +44,11 @@ dev = [
 
 [project.scripts]
 keystore-mcp-server = "keystore_mcp.server:main"
+
+[project.urls]
+Homepage = "https://github.com/nirholas/ethereum-wallet-toolkit"
+Repository = "https://github.com/nirholas/ethereum-wallet-toolkit/tree/main/keystore-mcp-server"
+Documentation = "https://github.com/nirholas/ethereum-wallet-toolkit/blob/main/keystore-mcp-server/README.md"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/keystore_mcp"]

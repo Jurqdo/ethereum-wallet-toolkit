@@ -6,7 +6,7 @@ readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.11"
 authors = [
-    {name = "nich", email = "nich@ethereum.tools"}
+    {name = "nirholas", email = "nich@ethereum.tools"}
 ]
 keywords = [
     "ethereum",
@@ -45,6 +45,11 @@ dev = [
 
 [project.scripts]
 signing-mcp-server = "signing_mcp.server:main"
+
+[project.urls]
+Homepage = "https://github.com/nirholas/ethereum-wallet-toolkit"
+Repository = "https://github.com/nirholas/ethereum-wallet-toolkit/tree/main/signing-mcp-server"
+Documentation = "https://github.com/nirholas/ethereum-wallet-toolkit/blob/main/signing-mcp-server/README.md"
 
 [build-system]
 requires = ["hatchling"]

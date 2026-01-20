@@ -1,5 +1,10 @@
 # Signing MCP Server
 
+[![PyPI](https://img.shields.io/pypi/v/signing-mcp-server)](https://pypi.org/project/signing-mcp-server/)
+[![MCP Registry](https://img.shields.io/badge/MCP-Registry-blue)](https://registry.modelcontextprotocol.io)
+
+<!-- mcp-name: io.github.nirholas/signing-mcp-server -->
+
 An MCP (Model Context Protocol) server providing comprehensive Ethereum message signing capabilities including EIP-191 personal_sign and EIP-712 typed structured data.
 
 ## Features
