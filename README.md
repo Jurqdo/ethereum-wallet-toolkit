@@ -6,16 +6,17 @@
 
 > **Secure, auditable Python CLI for Ethereum wallet generation, vanity addresses, BIP39 mnemonics, HD wallets, and message signing — using only official Ethereum Foundation libraries.**
 
-### 🔑 Key Features
+### Key Features
 
-- **Wallet Generation** — Random wallets with cryptographically secure randomness
-- **BIP39 Mnemonics** — 12/15/18/21/24-word seed phrases in multiple languages
-- **HD Wallets (BIP32/BIP44)** — Derive multiple addresses from one seed
-- **Vanity Addresses** — Generate addresses with custom prefixes/suffixes
-- **Message Signing** — EIP-191 personal_sign with verification
-- **Contract Addresses** — Predict CREATE and CREATE2 deployment addresses
-- **100% Offline** — No network calls, fully air-gappable
-- **Auditable Code** — Single-file Python, easy to review
+- **Wallet Generation** - Random wallets with cryptographically secure randomness
+- **BIP39 Mnemonics** - 12/15/18/21/24-word seed phrases in multiple languages
+- **HD Wallets (BIP32/BIP44)** - Derive multiple addresses from one seed
+- **Vanity Addresses** - Generate addresses with custom prefixes/suffixes
+- **Message Signing** - EIP-191 personal_sign with verification
+- **Contract Addresses** - Predict CREATE and CREATE2 deployment addresses
+- **MCP Server Integration** - Model Context Protocol servers for AI-assisted workflows
+- **100% Offline** - No network calls, fully air-gappable
+- **Auditable Code** - Single-file Python, easy to review
 
 ---
 
@@ -363,10 +364,99 @@ ethereum-wallet-toolkit/
 │   ├── SIGNING.md      # Message signing guide
 │   ├── TRANSACTION.md  # Transaction signing guide
 │   └── TYPED_DATA.md   # EIP-712 typed data guide
+├── ethereum-wallet-mcp/     # MCP server for wallet operations
+├── keystore-mcp-server/     # MCP server for keystore operations
+├── signing-mcp-server/      # MCP server for message signing
+├── transaction-mcp-server/  # MCP server for transaction building
+├── validation-mcp-server/   # MCP server for validation utilities
 └── tests/              # Test suite
-    ├── test_toolkit.py # Main toolkit tests
-    └── test_modules.py # Standalone module tests
 ```
+
+## MCP Server Integration
+
+This toolkit includes five Model Context Protocol (MCP) servers that enable AI assistants to perform Ethereum wallet operations programmatically. Each server is a standalone Python package that can be installed and run independently.
+
+### Available MCP Servers
+
+| Server | Description | Key Tools |
+|--------|-------------|-----------|
+| **ethereum-wallet-mcp** | Core wallet operations | Wallet generation, mnemonic creation, HD derivation |
+| **keystore-mcp-server** | Keystore management | Encrypt/decrypt keystores, password validation |
+| **signing-mcp-server** | Message and data signing | EIP-191 messages, EIP-712 typed data, raw hash signing |
+| **transaction-mcp-server** | Transaction handling | Build, sign, decode legacy and EIP-1559 transactions |
+| **validation-mcp-server** | Validation utilities | Address/key validation, checksum, function selectors |
+
+### Installation
+
+Each MCP server can be installed using pip or uv:
+
+```bash
+# Install individual servers
+cd ethereum-wallet-mcp && pip install -e .
+cd keystore-mcp-server && pip install -e .
+cd signing-mcp-server && pip install -e .
+cd transaction-mcp-server && pip install -e .
+cd validation-mcp-server && pip install -e .
+```
+
+### Configuration
+
+Add the servers to your MCP client configuration (e.g., Claude Desktop):
+
+```json
+{
+  "mcpServers": {
+    "ethereum-wallet": {
+      "command": "uv",
+      "args": ["run", "--directory", "/path/to/ethereum-wallet-mcp", "python", "-m", "ethereum_wallet_mcp"]
+    },
+    "keystore": {
+      "command": "uv",
+      "args": ["run", "--directory", "/path/to/keystore-mcp-server", "python", "-m", "keystore_mcp"]
+    },
+    "signing": {
+      "command": "uv",
+      "args": ["run", "--directory", "/path/to/signing-mcp-server", "python", "-m", "signing_mcp"]
+    },
+    "transaction": {
+      "command": "uv",
+      "args": ["run", "--directory", "/path/to/transaction-mcp-server", "python", "-m", "transaction_mcp"]
+    },
+    "validation": {
+      "command": "uv",
+      "args": ["run", "--directory", "/path/to/validation-mcp-server", "python", "-m", "validation_mcp"]
+    }
+  }
+}
+```
+
+### Server Capabilities
+
+**Validation MCP Server**
+- Address validation with EIP-55 checksum verification
+- Private and public key validation with security assessment
+- Hex data validation and type detection
+- Keccak256 hashing and ENS namehash computation
+- Function selector encoding and decoding
+- Storage slot calculation for mappings and dynamic arrays
+
+**Signing MCP Server**
+- EIP-191 personal message signing and verification
+- EIP-712 typed data signing with full struct support
+- Raw hash signing with explicit risk acknowledgement
+- Signature format conversion and component extraction
+
+**Transaction MCP Server**
+- Legacy and EIP-1559 transaction building
+- Transaction signing and RLP serialization
+- Raw transaction decoding and analysis
+- Gas estimation utilities
+
+**Keystore MCP Server**
+- Web3 Secret Storage V3 keystore creation
+- Keystore decryption with scrypt and pbkdf2 support
+- Password strength validation
+- Keystore format validation
 
 ## Comparison with Other Tools
 
@@ -389,12 +479,14 @@ ethereum-wallet-toolkit/
 | **Auditable** | Yes (~1500 lines) | No (Complex) | Yes |
 | **Offline** | Yes | Yes | Yes |
 
-## For AI / LLM / Vibe Coders 🤖
+## For AI / LLM Integration
 
 This project includes machine-readable documentation for AI assistants:
 
-- **[llms.txt](llms.txt)** — Quick summary for LLMs
-- **[llms-full.txt](llms-full.txt)** — Comprehensive context with code patterns
+- **[llms.txt](llms.txt)** - Quick summary for LLMs
+- **[llms-full.txt](llms-full.txt)** - Comprehensive context with code patterns
+
+The MCP servers provide programmatic access to all toolkit functionality, enabling AI assistants to perform wallet operations, sign messages, build transactions, and validate data through standardized tool interfaces.
 
 ### Quick Copy-Paste Examples
 
@@ -450,13 +542,13 @@ Standalone educational tools (Ethereum Foundation libraries only):
 - [Web3 Secret Storage](https://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition)
 
 ---
-### 🏷️ Keywords
+### Keywords
 
-`ethereum` `wallet` `python` `cli` `bip39` `bip32` `hd-wallet` `mnemonic` `vanity-address` `eth-account` `private-key` `address-generator` `message-signing` `eip-191` `secp256k1` `keccak256` `web3` `cryptocurrency` `blockchain` `cold-storage` `offline-wallet` `air-gapped` `open-source` `educational`
+`ethereum` `wallet` `python` `cli` `bip39` `bip32` `hd-wallet` `mnemonic` `vanity-address` `eth-account` `private-key` `address-generator` `message-signing` `eip-191` `eip-712` `secp256k1` `keccak256` `web3` `cryptocurrency` `blockchain` `cold-storage` `offline-wallet` `air-gapped` `mcp` `model-context-protocol` `open-source` `educational`
 ---
 
 <p align="center">
-  <b>⭐ Star this repo if you find it useful!</b><br>
+  <b>Star this repo if you find it useful</b><br>
   <sub>Educational tool for understanding Ethereum wallet mechanics</sub>
 </p>
 
