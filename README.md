@@ -98,6 +98,29 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+## MCP Servers (AI Integration)
+
+This toolkit includes 5 Model Context Protocol servers for AI assistant integration:
+
+| Server | Purpose | Tools |
+|--------|---------|-------|
+| `ethereum-wallet-mcp` | Wallet generation, HD wallets | 6 |
+| `keystore-mcp-server` | Encrypted keystore files | 9 |
+| `signing-mcp-server` | Message/data signing | 12 |
+| `transaction-mcp-server` | Transaction building | 15 |
+| `validation-mcp-server` | Address/key validation | 15 |
+
+**Total: 57 tools, 348 tests**
+
+### MCP Documentation
+
+- **[MCP Servers Overview](docs/MCP_SERVERS.md)** - Installation and configuration
+- **[Prompt Examples](docs/PROMPT_EXAMPLES.md)** - Real-world prompts for all servers
+- **[Quick Reference](docs/QUICK_REFERENCE.md)** - Fast lookup card
+- **[Testing Guide](docs/TESTING.md)** - How to run and write tests
+- **[Integration Guide](docs/INTEGRATION.md)** - Claude Desktop setup
+- **[Workflows & Recipes](docs/WORKFLOWS.md)** - Common multi-step operations
+
 ## Features
 
 ### 1. Generate Random Wallet

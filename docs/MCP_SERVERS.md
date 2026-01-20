@@ -2,17 +2,24 @@
 
 This repository includes 5 Model Context Protocol (MCP) servers that expose Ethereum wallet functionality to AI assistants like Claude.
 
+## Documentation
+
+- **[Prompt Examples](PROMPT_EXAMPLES.md)** - Real-world prompts for interacting with the servers
+- **[Testing Guide](TESTING.md)** - How to run and write tests
+- **[Integration Guide](INTEGRATION.md)** - Setting up with Claude Desktop and other tools
+- **[Workflows & Recipes](WORKFLOWS.md)** - Common workflows combining multiple servers
+
 ## Overview
 
 | Server | Purpose | Tools | Tests |
 |--------|---------|-------|-------|
 | [ethereum-wallet-mcp](../ethereum-wallet-mcp/) | Wallet generation, HD wallets, mnemonics | 6 | 111 |
-| [keystore-mcp-server](../keystore-mcp-server/) | Encrypted keystore files (Web3 Secret Storage) | 8 | 74 |
-| [signing-mcp-server](../signing-mcp-server/) | Message signing, EIP-191, EIP-712 | 7 | 34 |
-| [transaction-mcp-server](../transaction-mcp-server/) | Transaction building, encoding, signing | 12 | 65 |
+| [keystore-mcp-server](../keystore-mcp-server/) | Encrypted keystore files (Web3 Secret Storage) | 9 | 74 |
+| [signing-mcp-server](../signing-mcp-server/) | Message signing, EIP-191, EIP-712 | 12 | 34 |
+| [transaction-mcp-server](../transaction-mcp-server/) | Transaction building, encoding, signing | 15 | 65 |
 | [validation-mcp-server](../validation-mcp-server/) | Address/key validation, checksums, hashing | 15 | 64 |
 
-**Total: 48 tools, 348 tests**
+**Total: 57 tools, 348 tests**
 
 ## Quick Start
 
@@ -40,16 +47,16 @@ Add to your `claude_desktop_config.json`:
       "command": "ethereum-wallet-mcp"
     },
     "keystore": {
-      "command": "keystore-mcp"
+      "command": "keystore-mcp-server"
     },
     "signing": {
-      "command": "signing-mcp"
+      "command": "signing-mcp-server"
     },
     "transaction": {
-      "command": "transaction-mcp"
+      "command": "transaction-mcp-server"
     },
     "validation": {
-      "command": "validation-mcp"
+      "command": "validation-mcp-server"
     }
   }
 }
